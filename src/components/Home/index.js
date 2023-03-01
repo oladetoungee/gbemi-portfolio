@@ -2,11 +2,16 @@ import LogoTitle from '../../assets/images/ankara.svg'
 import { Link, NavLink } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/'
 import './index.scss'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Home = () => {
 const [letterClass, setletterClass] = useState('text-animate')
 const nameArray = ['G', 'B', 'E', 'M', 'I']
+useEffect(() => {
+    return setTimeout(() => {
+        setletterClass('text-animate-hover')
+    }, 4000)
+}, [])
     return (
  
         <div className="container home-page">
@@ -15,7 +20,7 @@ const nameArray = ['G', 'B', 'E', 'M', 'I']
             <AnimatedLetters letterClass={letterClass}
             strArray={nameArray} idx={15}
             />
-           Gbemi <br/>
+            <br/>
        
             </h1>
             <h2>Frontend Developer / Technical Writer / Vue Js / React Js</h2>
