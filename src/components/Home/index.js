@@ -36,8 +36,8 @@ const Home = () => {
       <div className="image-zone">
         <div className="content">
         <img src={'https://abdelrahman345.netlify.app/images/me.jpg'} alt="Letter G logo" /> 
-      <h2>Gbemisola Oladetoun <span>Frontend Dev</span></h2>
-      <a href={'https://abdelrahman345.netlify.app/'}></a> 
+      <h2>Gbemisola Oladetoun <span>Frontend Developer</span></h2>
+      <a href={'https://abdelrahman345.netlify.app/'}>Let's make magic!</a> 
         </div>
     
       </div>

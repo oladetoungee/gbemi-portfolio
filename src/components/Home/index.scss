@@ -110,14 +110,14 @@ flex-direction: column-reverse;
       content: '';
       position: absolute;
       inset: -10px 100px;
-      background: linear-gradient(#F68989, #874356);
+      background: linear-gradient(#AF6FAB, #AF6FAB);
       transition: .5s;
       animation: animate 4s linear infinite;
     }
     &::after {
       content: "";
       position: absolute;
-      background-color: #C65D7B;
+      background-color: #603B61;
       inset: 10px;
       border-radius: 50%;
       z-index: 1;
