@@ -1,7 +1,7 @@
 import './index.scss'
 import { useState } from 'react'
-import LogoS from '../../assets/images/logo.png'
-import LogoSubtitle from '../../assets/images/logoS.png'
+import LogoS from '../../assets/images/ankara.svg'
+import LogoSubtitle from '../../assets/images/pic1.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
@@ -29,7 +29,7 @@ const Sidebar = () => {
         className="logo"
         to="/HOME"
        >
-        <img src={LogoS} alt="Logo" />
+      
         <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
       </Link>
       <nav>
@@ -43,7 +43,7 @@ const Sidebar = () => {
         <NavLink 
           activeclassname="active"
           className="about-link"
-          to="/about"
+          to="/About"
          >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>

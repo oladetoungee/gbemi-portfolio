@@ -4,13 +4,14 @@ import { Link, NavLink } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/'
 import Sidebar from '../Sidebar/'
 import Layout from '../Layout/'
+import '../Home/index.scss'
 import './index.scss'
 import { useEffect, useState } from 'react'
 
-const Home = () => {
+const About = () => {
   const [letterClass, setletterClass] = useState('text-animate')
-  const nameArray = ['G', 'B', 'E', 'M', 'I']
-  const helloArray = ['H', 'e', 'l', 'l', 'o']
+  const nameArray = ['A', 'B', 'O', 'U', 'T', ' ', 'M', 'E']
+
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setletterClass('text-animate-hover')
@@ -24,15 +25,12 @@ const Home = () => {
   return (
     <div>
   <Sidebar></Sidebar>
+
     <div className="container home-page">
     <Layout></Layout>
       <div className="text-zone">
         <h1>
-        <AnimatedLetters
-            letterClass={letterClass}
-            strArray={helloArray}
-            idx={15}
-          />, <img src={Logo} alt="Letter G logo" /> <br /> I'm
+      
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
@@ -40,10 +38,21 @@ const Home = () => {
           />
           <br />
         </h1>
-        <h2>Frontend Developer / Technical Writer / Vue Js / React Js</h2>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
+        <p>
+      My name is Gbemi and I'm helplessly in love with the fact that I can change the world, one line of code at a time.
+       It’s amazing how much technology has transformed the world and it's equally mind-blowing how much I can harness the power of technology to contribute my own quota.
+      </p>
+        <p>
+        To me, technical writing and frontend development are more than just jobs.
+         They are passions that I pour my heart and soul into every single day.
+          I love the feeling of creating something beautiful and functional from scratch, and the sense of accomplishment that comes with solving a difficult problem.
+        </p>
+        <p>
+            If I'm not coding or writing, you'll most likely find me reading a book, playing my guitar or teaching.
+        </p>
+        <p>
+Once again, my name is Gbemi and I'm excited to work with you and bring your digital ideas and vision to life!
+        </p>
       </div>
       <div className="image-zone">
         <div className="content">
@@ -58,4 +67,4 @@ const Home = () => {
   
   )
 }
-export default Home
+export default About
