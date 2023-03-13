@@ -8,7 +8,15 @@ import '../Home/index.scss'
 import './index.scss'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faGitAlt, faHtml5, faJsSquare, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons'
+import {
+  faCss3,
+  faGitAlt,
+  faHtml5,
+  faJsSquare,
+  faReact,
+  faVuejs,
+} from '@fortawesome/free-brands-svg-icons'
+import { faFireAlt } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   const [letterClass, setletterClass] = useState('text-animate')
@@ -69,31 +77,36 @@ const About = () => {
       <a href={'https://abdelrahman345.netlify.app/'}>Let's make magic!</a> 
         </div>  
       </div> */}
-      <div className='stage-cube-cont'>
-        <div className='cubespinner'>
-          <div className='face1'>
-          <FontAwesomeIcon icon={faHtml5} color="#DD0031"></FontAwesomeIcon>
+        <div className="skill-container">
+          <h2>CORE SKILLS</h2>
+          <div class="skills">
+            <div class="skill">
+              <FontAwesomeIcon icon={faHtml5} ></FontAwesomeIcon>
+              <span>HTML5</span>
+            </div>
+            <div class="skill">
+            <FontAwesomeIcon icon={faCss3} ></FontAwesomeIcon>
+              <span>CSS3</span>
+            </div>
+            <div class="skill">
+           <FontAwesomeIcon icon={faJsSquare} ></FontAwesomeIcon>
+              <span>Javascript</span>
+            </div>
+          
+            <div class="skill">
+            <FontAwesomeIcon icon={faReact} ></FontAwesomeIcon>
+              <span>ReactJS</span>
+            </div>
+            <div class="skill">
+            <FontAwesomeIcon icon={faVuejs} ></FontAwesomeIcon>
+              <span>VueJS</span>
+            </div>
+            <div class="skill">
+            <FontAwesomeIcon icon={faGitAlt} ></FontAwesomeIcon>
+              <span>Git</span>
+            </div>
           </div>
-          <div className='face2'>
-          <FontAwesomeIcon icon={faCss3} color="#DD0031"></FontAwesomeIcon>
-          </div>
-          <div className='face3'>
-          <FontAwesomeIcon icon={faJsSquare} color="#DD0031"></FontAwesomeIcon>
-          </div>
-          <div className='face4'>
-          <FontAwesomeIcon icon={faVuejs} color="#DD0031"></FontAwesomeIcon>
-          </div>
-          <div className='face5'>
-          <FontAwesomeIcon icon={faReact} color="#DD0031"></FontAwesomeIcon>
-          </div>
-          <div className='face6'>
-          <FontAwesomeIcon icon={faGitAlt} color="#DD0031"></FontAwesomeIcon>
-          </div>
-
         </div>
-      </div>
-     
-
       </div>
     </div>
   )
