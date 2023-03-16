@@ -6,6 +6,7 @@ import Sidebar from '../Sidebar/'
 import Layout from '../Layout/'
 import './index.scss'
 import { useEffect, useState } from 'react'
+import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setletterClass] = useState('text-animate')
@@ -54,6 +55,7 @@ const Home = () => {
     
       </div>
     </div>
+    <Loader type='pacman'/>
     </div>
   
   )

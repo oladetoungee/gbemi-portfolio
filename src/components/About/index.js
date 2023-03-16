@@ -16,7 +16,8 @@ import {
   faReact,
   faVuejs,
 } from '@fortawesome/free-brands-svg-icons'
-import { faFireAlt } from '@fortawesome/free-solid-svg-icons'
+import Loader from 'react-loaders'
+
 
 const About = () => {
   const [letterClass, setletterClass] = useState('text-animate')
@@ -108,6 +109,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Loader type='pacman'/>
     </div>
   )
 }
