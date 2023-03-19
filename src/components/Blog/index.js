@@ -13,7 +13,7 @@ import PowerStream from '../../assets/images/church.JPG'
 import Huntr from '../../assets/images/Huntrhome.JPG'
 import Loader from 'react-loaders'
 
-const Portfolio = () => {
+const Blog = () => {
   const [letterClass, setletterClass] = useState('text-animate')
   const nameArray = ['M', 'Y', ' ', 'P', 'R', 'O', 'J', 'E', 'C', 'T', 'S']
   const projects = [
@@ -131,4 +131,4 @@ const Portfolio = () => {
     </div>
   )
 }
-export default Portfolio
+export default Blog

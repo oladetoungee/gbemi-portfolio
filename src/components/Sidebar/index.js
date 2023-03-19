@@ -59,7 +59,7 @@ const Sidebar = () => {
         <NavLink
           activeclassname="active"
           className="blog-link"
-          to="/blog"
+          to="/Blog"
          
         >
           <FontAwesomeIcon icon={faBook} color="#4d4d4e" />
