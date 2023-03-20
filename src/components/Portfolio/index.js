@@ -102,7 +102,7 @@ const Portfolio = () => {
                     <i className="fab fa-github"></i> Github
                   </a>
                 </div>
-                <h4>{project.title}</h4>
+                <h3>{project.title}</h3>
               <span>{project.info}</span>
               </div>
             ))}

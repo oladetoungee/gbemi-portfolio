@@ -1,6 +1,4 @@
-import LogoTitle from '../../assets/images/pic1.jpeg'
-import Logo from '../../assets/images/pix.svg'
-import { Link, NavLink } from 'react-router-dom'
+
 import AnimatedLetters from '../AnimatedLetters/'
 import Sidebar from '../Sidebar/'
 import Layout from '../Layout/'
@@ -15,7 +13,7 @@ import Loader from 'react-loaders'
 
 const Blog = () => {
   const [letterClass, setletterClass] = useState('text-animate')
-  const nameArray = ['M', 'Y', ' ', 'P', 'R', 'O', 'J', 'E', 'C', 'T', 'S']
+  const nameArray = ['M', 'Y', ' ', 'A', 'R', 'T', 'I', 'C', 'L', 'E', 'S']
   const projects = [
     {
       title: 'My Pocket Counsel',
@@ -102,7 +100,7 @@ const Blog = () => {
                     <i className="fab fa-github"></i> Github
                   </a>
                 </div>
-                <h4>{project.title}</h4>
+                <h3>{project.title}</h3>
               <span>{project.info}</span>
               </div>
             ))}
