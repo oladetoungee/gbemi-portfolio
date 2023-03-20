@@ -5,10 +5,10 @@ import Layout from '../Layout/'
 import '../Home/index.scss'
 import './index.scss'
 import { useEffect, useState } from 'react'
-import Mpc from  '../../assets/images/MPC.jpg'
-import GeeSplash from '../../assets/images/splash.JPG'
-import PowerStream from '../../assets/images/church.JPG'
-import Huntr from '../../assets/images/Huntrhome.JPG'
+import draggableArt from  '../../assets/images/draggableArt.jpg'
+import aiArt from '../../assets/images/aiArt.jpg'
+import interArt from '../../assets/images/interArt.jpg'
+import warehouseArt from '../../assets/images/warehouseArt.jpg'
 import Loader from 'react-loaders'
 
 const Blog = () => {
@@ -16,33 +16,30 @@ const Blog = () => {
   const nameArray = ['M', 'Y', ' ', 'A', 'R', 'T', 'I', 'C', 'L', 'E', 'S']
   const projects = [
     {
-      title: 'My Pocket Counsel',
-      photo: Mpc,
-      preview: 'https://mypocketcounsel.com/',
-      github: 'https://github.com/MyPocketCounsel/templatelibrary',
-      info: 'MPC is a solution that leverage next-generation technology to automate your contract generation'
+      title: 'Leveraging AI for better development.',
+      photo: aiArt,
+      preview: 'https://oladetoungee.hashnode.dev/leveraging-ai-to-become-a-better-developer',
+     info: 'AI is transforming the world, and we as developers are at the forefront of this transformation. '
     },
    
     {
-      title: 'Huntr',
-      photo: Huntr,
-      preview: 'https://huntr.netlify.app/',
-      github: 'https://github.com/oladetoungee/Huntr',
-      info: 'With Huntr, users can boost their skills and profile, be provided with personalised career guidance and matched with the right opportunities'
+      title: 'Using Vue 3 draggable and sortable',
+      photo: draggableArt,
+      preview: 'https://oladetoungee.hashnode.dev/using-vue-3-draggable-and-sortable',
+      info: 'This article explains how to create a draggable and sortable list in Vue 3.'
     },
     {
-      title: 'GeeSplash',
-      photo: GeeSplash,
-      preview: 'https://geesplash.netlify.app/',
-      github: 'https://github.com/oladetoungee/Huntr',
-      info: 'Inspired by unsplash, Geesplash provides users with random images they need'
+      title: "With SHiiP, You don't have to deal with storage and warehousing issues",
+      photo: warehouseArt,
+      preview: 'https://goshiip.com/blog/with-s-hii-p-you-don-t-have-to-deal-with-storage-and-warehousing-issues',
+      info: 'The SHiiP warehouse is a secure and convenient storage solution for our customers as it gives them an advantage over other businesses.'
     },
     {
-      title: 'PowerStream',
-      photo: PowerStream,
-      preview: 'https://powerstreamweb.netlify.app/',
-      github: 'https://github.com/oladetoungee/Powerstreamweb',
-      info: 'Powerstream is a church website specifically built for my church to help members and intending members get information about church activities'
+      title: 'Let’s help you go international',
+      photo: interArt,
+      preview: 'https://goshiip.com/blog/let-s-help-you-go-international',
+   
+      info: 'In this article, I gave a rundown of certain limitations that you might face while trying to ship abroad during these busy times and vital solutions that SHiiP has provided to help you out.'
     },
   
   ]
@@ -89,16 +86,9 @@ const Blog = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fas fa-eye"></i> Preview
+                    <i className="fas fa-eye"></i> Read
                   </a>
-                  <a
-                    href={project.github}
-                    className="projects__btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-github"></i> Github
-                  </a>
+                
                 </div>
                 <h3>{project.title}</h3>
               <span>{project.info}</span>
@@ -109,14 +99,13 @@ const Blog = () => {
       
             <div className="others">
               <h4>
-                Other projects are on{' '}
+                Other articles are on{' '}
                 <a
-                  href="https://github.com/oladetoungee?tab=repositories"
+                  href="https://oladetoungee.hashnode.dev/"
                   target="_blank"
                 >
-                  GITHUB
-                </a>{' '}
-                and details can be provided upon request.
+                  HASHNODE
+                </a>
               </h4>
             </div>
 
