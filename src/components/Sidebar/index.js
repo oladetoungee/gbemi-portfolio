@@ -110,7 +110,7 @@ const Sidebar = () => {
       
       <li>
       <a 
-         href="https://github.com/bobangajicsm"
+         href="https://twitter.com/OladetounGee"
          target="_blank"
          rel="noreferrer"
          className='twitter'

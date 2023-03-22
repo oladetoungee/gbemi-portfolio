@@ -91,7 +91,7 @@ const Blog = () => {
                 
                 </div>
                 <h3>{project.title}</h3>
-              <span>{project.info}</span>
+              {/* <span>{project.info}</span> */}
               </div>
             ))}
 
