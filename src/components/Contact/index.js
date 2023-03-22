@@ -8,10 +8,10 @@ import './index.scss'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 
-const Home = () => {
+const Contact = () => {
   const [letterClass, setletterClass] = useState('text-animate')
   const nameArray = ['G', 'B', 'E', 'M', 'I']
-  const helloArray = ['H', 'e', 'l', 'l', 'o']
+  const helloArray = ['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setletterClass('text-animate-hover')
@@ -33,18 +33,27 @@ const Home = () => {
             letterClass={letterClass}
             strArray={helloArray}
             idx={15}
-          />, <img src={Logo} alt="Letter G logo" /> <br /> I'm
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={15}
           />
-          <br />
         </h1>
-        <h2>Frontend Developer / Technical Writer / Vue Js / React Js</h2>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
+        <div className='contact-form'>
+            <form>
+                <ul>
+                    <li className='half'>
+                        <input type={text} name="name" placeholder='Name' required>
+                        </input>
+                    </li>
+                    <li className='half'>
+                        <input type={text} name="name" placeholder='Name' required>
+                        </input>
+                    </li>
+                    <li className='half'>
+                        <input type={text} name="name" placeholder='Name' required>
+                        </input>
+                    </li>
+                </ul>
+                </form>
+        </div>
+      
       </div>
       <div className="image-zone">
         <div className="content">
@@ -60,4 +69,4 @@ const Home = () => {
   
   )
 }
-export default Home
+export default Contact

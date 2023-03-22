@@ -67,7 +67,7 @@ const Sidebar = () => {
         <NavLink
           activeclassname="active"
           className="contact-link"
-          to="/contact"
+          to="/Contact"
          
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
@@ -77,7 +77,7 @@ const Sidebar = () => {
       <ul>
     <li>
     <a 
-           href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+           href="https://www.linkedin.com/in/oladetoun-gbemisola-3aa7071aa/"
            target="_blank"
            rel="noreferrer"
          >
@@ -86,7 +86,7 @@ const Sidebar = () => {
     </li>
       <li>
       <a 
-         href="https://github.com/bobangajicsm"
+         href="https://github.com/OladetounGee"
          target="_blank"
          rel="noreferrer"
          className='github'
@@ -98,7 +98,7 @@ const Sidebar = () => {
      
       <li>
       <a 
-         href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
+         href="https://hashnode.com/@OladetounGee"
          rel="noreferrer"
          target="_blank"
          className='hashnode'
