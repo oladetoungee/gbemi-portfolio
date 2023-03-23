@@ -42,7 +42,7 @@ const Home = () => {
           <br />
         </h1>
         <h2>Frontend Developer / Technical Writer / Vue Js / React Js</h2>
-        <Link to="/contact" className="flat-button">
+        <Link to="/Contact" className="flat-button">
           CONTACT ME
         </Link>
       </div>

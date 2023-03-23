@@ -10,13 +10,11 @@
     .logo {
       display: block;
       padding: 8px 0;
-  
       img {
         display: block;
         margin: 8px auto;
         width: 24px;
         height: auto;
-  
         &.sub-logo {
           width: 50px;
         }
@@ -31,7 +29,6 @@ nav {
     top: 50%;
     margin-top: -250px;
     width: 100%;
-
     a {
       font-size: 22px;
       font-weight: 200;
