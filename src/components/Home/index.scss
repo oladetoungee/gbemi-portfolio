@@ -1,193 +1,230 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700&display=swap');
 
 .home-page {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    .text-zone {
-        margin-left: 300px;
-        position: absolute;
-        left: 70%;
-        top: 50%;
-        transform: translateY(-50%);
-     width: 500px;
-        max-height: 90%;
-    
-    }
-    
-    h1 {
-        color: white;
-        font-size: 70px;
-        margin: 0;
-        font-family: 'Coolvetica';
-        font-weight: 400px;
-        &::before {
-            content: '<techie>';
-            font-family: 'LaBelleAurore';
-               color: #AF6FAB;
-               font-size: 22px;
-            position: absolute;
-            margin-top: -40px;
-            left: -50px;
-            
-        }
-        &::after {
-            content: '</techie>';
-            font-family: 'LaBelleAurore';
-            color: #AF6FAB;
-            font-size: 22px;
-            position: absolute;     
-            margin-left: 350px;
-            left: 15px;
-            animation: fadeIn 1s 1.7;
+  .text-zone {
+    margin-left: 300px;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    max-height: 90%;
 
-        }
-        img {
-            width: 200px;
-            border-radius: 80px;
-            height: auto;
-            margin-left: 50px;
-            
-        }
-    }
-    h2 {
-        color: #AF6FAB;
-        margin-top: 50px;
-        margin-right: -120px;
-        font-weight: 400;
-        letter-spacing: 3px;
-        font-size: 17px;
-        animation: fadeIn 1s 1.8s backwards;
-    }
-    .flat-button {
-        color: #AF6FAB;
-        font-size: 22px;
-        font-weight: 400;
-        letter-spacing: 4px;
-        text-decoration: none;
-        padding: 10px;
-        border: 2px solid #AF6FAB;
-        margin-top: 30px;
-        float: left;
-        animation: fadeIn 1s 1.8s backwards;
-        &:hover {
-            background-color:  #AF6FAB;
-            color: #603B61;
-          
-        }
-    }
-}
-@mixin keyFrame($animeName) {
-    @-webkit-keyframes #{$animeName} {
-        @content;
-      }
-      @-moz-keyframes #{$animeName} {
-        @content;
-      }
-      @keyframes #{$animeName} {
-        @content;
-      }
   }
-  
- 
-  
 
-  .image-zone {
-    left: 1000px;
-    font-family: 'Raleway', sans-serif;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    background-color: #F6E7D8;
-    border-radius: 50%;
-    overflow: hidden;
+  h1 {
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400px;
+
     &::before {
-      content: '';
+      content: '<techie>';
+      font-family: 'LaBelleAurore';
+      color: #AF6FAB;
+      font-size: 22px;
       position: absolute;
-      inset: -10px 100px;
-      background: linear-gradient(#AF6FAB, #AF6FAB);
-      transition: .5s;
-      animation: animate 4s linear infinite;
+      margin-top: -40px;
+      left: -50px;
+
     }
+
     &::after {
-      content: "";
+      content: '</techie>';
+      font-family: 'LaBelleAurore';
+      color: #AF6FAB;
+      font-size: 22px;
       position: absolute;
-      background-color: #603B61;
-      inset: 10px;
-      border-radius: 50%;
-      z-index: 1;
+      margin-left: 350px;
+      left: 15px;
+      animation: fadeIn 1s 1.7;
+
     }
-    .content {
-      position: absolute;
-      inset: 30px;
-      border: 6px solid #F6E7D8;
-      z-index: 3;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      flex-direction: column;
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        transition: .5s;
-      
-        pointer-events: none;
-        z-index: 3;
-      }
-      h2 {
-        margin: 0 auto;
-        position: relative;
-        text-align: center;
-        font-size: 15px;
-        font-weight: 600;
-        letter-spacing: 1.7px;
-        text-transform: uppercase;
-        color: #fff;
-        padding: 7px 0;
-        span {
-          display: block;
-          font-weight: 300;
-          font-size: 13px;
-          padding: 5px 0;
-        }
-      }
-      a {
-        position: relative;
-        background-color: #fff;
-        color: #C65D7B;
-        padding: 10px 20px;
-        border-radius: 20px;
-        font-size: 14px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        text-decoration: none;
-        transition: .5s;
-        &:hover {
-          letter-spacing: 3px;
-        }
-      }
+
+    img {
+      width: 200px;
+      border-radius: 80px;
+      height: auto;
+      margin-left: 50px;
+
     }
+  }
+
+  h2 {
+    color: #AF6FAB;
+    margin-top: 50px;
+    margin-right: -120px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 17px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+
+  .flat-button {
+    color: #AF6FAB;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #AF6FAB;
+    margin-top: 30px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+
     &:hover {
-      &::before {
-        inset: -20px 0px;
+      background-color: #AF6FAB;
+      color: #603B61;
+
+    }
+  }
+}
+
+@mixin keyFrame($animeName) {
+  @-webkit-keyframes #{$animeName} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animeName} {
+    @content;
+  }
+
+  @keyframes #{$animeName} {
+    @content;
+  }
+}
+
+
+
+
+.image-zone {
+  left: 900px;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #F6E7D8;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -10px 100px;
+    background: linear-gradient(#AF6FAB, #AF6FAB);
+    transition: .5s;
+    animation: animate 4s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #603B61;
+    inset: 10px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .content {
+    position: absolute;
+    inset: 30px;
+    border: 6px solid #F6E7D8;
+    z-index: 3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transition: .5s;
+
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    h2 {
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 7px 0;
+
+      span {
+        display: block;
+        font-weight: 300;
+        font-size: 13px;
+        padding: 5px 0;
       }
-      img {
-        opacity: 0
+    }
+
+    a {
+      position: relative;
+      background-color: #fff;
+      color: #C65D7B;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: .5s;
+
+      &:hover {
+        letter-spacing: 3px;
       }
     }
   }
-  
-  @include keyFrame(animate) {
-    0% {
-      transform: rotate(0)
+
+  &:hover {
+    &::before {
+      inset: -20px 0px;
     }
-    100% {
-      transform: rotate(360deg)
+
+    img {
+      opacity: 0
     }
   }
+}
+
+@include keyFrame(animate) {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .image-zone {
+    display: none;
+  }
+  .home-page .text-zone {
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .image-zone {
+    display: none;
+  }
+  .home-page .text-zone {
+    margin-left: 150px;
+  }
+}

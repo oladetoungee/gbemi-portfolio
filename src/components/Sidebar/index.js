@@ -26,6 +26,7 @@ const Sidebar = () => {
   
   return (
     <div className="nav-bar">
+       <FontAwesomeIcon icon={faBars} color="#4d4d4e" style={{ display: 'none' }}  />
       <Link 
         className="logo"
         to="/HOME"

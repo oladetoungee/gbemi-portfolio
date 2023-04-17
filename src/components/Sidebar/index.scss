@@ -1,6 +1,6 @@
 .nav-bar {
     background: #BF94BC;
-    width: 150px;
+    width: 100px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -189,52 +189,9 @@ nav {
       }
     }
   }
-  // ul {
-  //   position: absolute;
-  //   bottom: 20px;
-  //   width: 100%;
-  //   display: block;
-  //   padding: 0;
-  //   list-style: none;
-  //   text-align: center;
-  //   margin: 0;
-
-  //   li {
-  //     a {
-  //       padding: 7px 0;
-  //       display: block;
-  //       font-size: 15px;
-  //       line-height: 16px;
-  //       color: #4d4d4e;
-  //     }
-     
-  //     &:hover {
-  //       .anchor-icon {
-  //         color: #ffd700;
-  //       }
-  //     }
-  //     &:after {
-  //       content: '';
-  //       font-size: 9px;
-  //       letter-spacing: 2px;
-  //       position: absolute;
-  //       bottom: 0;
-  //       display: block;
-  //       width: 100%;
-  //       text-align: center;
-  //       opacity: 0;
-  //       -webkit-transition: all 0.3s ease-out;
-  //       transition: all 0.3s ease-out;
-  //     }
-
-  //     &:first-child {
-  //       &:after {
-  //         content: 'HOME';
-  //       }
-  //     }
-  //   }
-  // }
-
-
-
-  
+  @media screen and (max-width: 1024px) {
+    .image-zone {
+     display: none;
+    }
+   
+  }
