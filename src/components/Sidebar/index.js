@@ -25,8 +25,11 @@ import { Link, NavLink } from 'react-router-dom'
 const Sidebar = () => {
   
   return (
-    <div className="nav-bar">
-       <FontAwesomeIcon icon={faBars} color="#4d4d4e" style={{ display: 'none' }}  />
+    <div>
+      <div className='nav-Icon'>  <FontAwesomeIcon icon={faBars}  /></div>
+     
+ <div className="nav-bar">
+      
       <Link 
         className="logo"
         to="/HOME"
@@ -176,6 +179,8 @@ const Sidebar = () => {
       
      
     </div>
+    </div>
+   
   )
 }
 

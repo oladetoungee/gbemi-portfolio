@@ -1,3 +1,6 @@
+.nav-Icon{
+  display: none;
+}
 .nav-bar {
     background: #BF94BC;
     width: 100px;
@@ -189,9 +192,17 @@ nav {
       }
     }
   }
-  @media screen and (max-width: 1024px) {
-    .image-zone {
-     display: none;
+  @media screen and (max-width: 650px) {
+    .nav-bar {
+    display: none;
     }
-   
+   .nav-Icon {
+    display: block;
+    background: #BF94BC;
+    height: 50px;
+    i {
+      color: #603B61;
+      width: 50px;
+    }
+   }
   }

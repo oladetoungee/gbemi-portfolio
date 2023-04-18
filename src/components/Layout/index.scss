@@ -36,3 +36,24 @@
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
+@media screen and (max-width: 880px) {
+    .tags {
+        left: 55px;
+    }
+    .body-tag {
+        margin-left: -30px;
+    }
+    
+  }
+  @media screen and (max-width: 700px) {
+    .top-tags {
+        margin-top: 100px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .tags {
+        left: 20px;
+    }
+   
+    
+  }
