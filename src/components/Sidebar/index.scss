@@ -197,12 +197,105 @@ nav {
     display: none;
     }
    .nav-Icon {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    padding:0 10px;
     background: #BF94BC;
-    height: 50px;
+    height: auto;
     i {
       color: #603B61;
-      width: 50px;
+      height:0;
+      margin-right: 10px;
     }
+   
    }
+   .dropdown-menu {
+    display: flex; 
+    flex-direction: column;
+    background: #BF94BC;
+ margin: 0 150px ;
+
+  
+    a {
+    
+      font-size: 17px;
+      font-weight: 200;
+      color: #603B61;
+      display: block;
+    
+      height: 30px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;  
+     
+      }
+
+      &:hover {
+        color: #AF6FAB;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+    
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      &:first-child {
+        &:after {
+          content: 'HOME';
+        
+        }
+      }
+    }
+
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
+      }
+    }
+
+    a.blog-link {
+      &:after {
+        content: 'BLOG';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #603B61;
+      }
+    }
+  }
   }

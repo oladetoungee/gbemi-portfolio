@@ -287,3 +287,18 @@
     margin-left: 160px;
   }
 }
+@media screen and (max-width: 440px) {
+ .text-zone {
+ 
+    h1 {
+    font-size: 40px;
+    } 
+    h2 {
+     
+      width: 200px;
+    }
+  }
+  .flat-button {
+    margin-left: 100px;
+  }
+}

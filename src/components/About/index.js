@@ -71,13 +71,7 @@ const About = () => {
             bring your digital ideas and vision to life!
           </p>
         </div>
-        {/* <div className="image-zone">
-        <div className="content">
-        <img src={LogoTitle} alt="Letter G logo" /> 
-      <h2>Gbemisola Oladetoun <span>Frontend Developer</span></h2>
-      <a href={'https://abdelrahman345.netlify.app/'}>Let's make magic!</a> 
-        </div>  
-      </div> */}
+    
         <div className="skill-container">
           <h2>CORE SKILLS</h2>
           <div class="skills">
