@@ -4,7 +4,7 @@
 
 .nav-bar {
   background: #BF94BC;
-  width: 100px;
+  width: 120px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -66,7 +66,7 @@ nav {
     &:after {
       content: '';
 
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       position: absolute;
       bottom: 0;
       display: block;
@@ -75,7 +75,7 @@ nav {
       opacity: 0;
       -webkit-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
     }
 
@@ -154,9 +154,9 @@ ul {
 
     &:after {
       content: '';
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       position: absolute;
       bottom: 0;
       display: block;
@@ -210,6 +210,7 @@ ul {
     padding: 0 10px;
     background: #BF94BC;
     height: auto;
+    width: 120%;
 
     i {
       color: #603B61;
@@ -268,5 +269,15 @@ ul {
 
 
    
+  }
+}
+@media screen and (max-height: 650px) {
+  .nav-bar {
+    ul {
+      bottom:10px;
+    }
+    nav {
+     margin-top: -220px;
+    }
   }
 }
