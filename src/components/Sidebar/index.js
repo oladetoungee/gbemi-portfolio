@@ -50,14 +50,14 @@ const Sidebar = () => {
           activeclassname="active"
           to="/"
          >
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e"  />
+      <p>HOME</p>
         </NavLink>
         <NavLink 
           activeclassname="active"
           className="about-link"
           to="/About"
          >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e"   />
+            <p>ABOUT</p>
         </NavLink>
         <NavLink
           activeclassname="active"
@@ -65,7 +65,7 @@ const Sidebar = () => {
           to="/Portfolio"
          
         >
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e"   />
+            <p>PORTFOLIO</p>
         </NavLink>
         <NavLink
           activeclassname="active"
@@ -73,7 +73,7 @@ const Sidebar = () => {
           to="/Blog"
          
         >
-          <FontAwesomeIcon icon={faBook} color="#4d4d4e"  />
+            <p>BLOG</p>
         </NavLink>
         <NavLink
           activeclassname="active"
@@ -81,7 +81,7 @@ const Sidebar = () => {
           to="/Contact"
          
         >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"   />
+           <p>CONTACT</p>
         </NavLink>
         </div>
       )}

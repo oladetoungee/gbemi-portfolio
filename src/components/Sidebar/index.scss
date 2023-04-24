@@ -1,301 +1,272 @@
-.nav-Icon{
+.nav-Icon {
   display: none;
 }
+
 .nav-bar {
-    background: #BF94BC;
-    width: 100px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 3;
-    min-height: 500px;
-  
-    .logo {
+  background: #BF94BC;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  .logo {
+    display: block;
+    padding: 8px 0;
+
+    img {
       display: block;
-      padding: 8px 0;
-      img {
-        display: block;
-        margin: 8px auto;
-        width: 24px;
-        height: auto;
-        &.sub-logo {
-          width: 50px;
-        }
+      margin: 8px auto;
+      width: 24px;
+      height: auto;
+
+      &.sub-logo {
+        width: 50px;
       }
     }
+  }
 }
+
 nav {
+  display: block;
+  text-align: center;
+  position: absolute;
+  height: 210px;
+  top: 50%;
+  margin-top: -250px;
+  width: 100%;
+
+  a {
+    font-size: 22px;
+    font-weight: 200;
+    color: #603B61;
     display: block;
-    text-align: center;
-    position: absolute;
-    height: 210px;
-    top: 50%;
-    margin-top: -250px;
-    width: 100%;
-    a {
-      font-size: 22px;
-      font-weight: 200;
-      color: #603B61;
-      display: block;
-      line-height: 51px;
-      height: 51px;
-      position: relative;
-      text-decoration: none;
+    line-height: 51px;
+    height: 51px;
+    position: relative;
+    text-decoration: none;
 
-      i {
-        transition: all 0.3s ease-out;     
-      }
-
-      &:hover {
-        color: #AF6FAB;
-
-        svg {
-          opacity: 0;
-        }
-
-        &:after {
-          opacity: 1;
-        }
-      }
-
-      &:after {
-        content: '';
-    
-        letter-spacing: 2px;
-        position: absolute;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        font-size: 20px;
-        font-weight: 500;
-      }
-
-      &:first-child {
-        &:after {
-          content: 'HOME';
-        
-        }
-      }
+    i {
+      transition: all 0.3s ease-out;
     }
 
-    a.about-link {
-      &:after {
-        content: 'ABOUT';
-      }
-    }
+    &:hover {
+      color: #AF6FAB;
 
-    a.contact-link {
-      &:after {
-        content: 'CONTACT';
-      }
-    }
-
-    a.portfolio-link {
-      &:after {
-        content: 'PORTFOLIO';
-      }
-    }
-
-    a.blog-link {
-      &:after {
-        content: 'BLOG';
-      }
-    }
-
-    a.active {
       svg {
-        color: #603B61;
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
       }
     }
-  }
-  ul {
-    display: block;
-    text-align: center;
-    position: absolute;
-    bottom: 120px;
+
+    &:after {
+      content: '';
+
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 0;
+      display: block;
       width: 100%;
-      display: block;
-      padding: 0;
-
-    a {
-      font-size: 22px;
-      color: #603B61;
-      display: block;
-      line-height: 51px;
-      height: 51px;
-      position: relative;
-      text-decoration: none;
-
-      i {
-        transition: all 0.3s ease-out;
-      }
-
-      &:hover {
-        color: #AF6FAB;
-
-        svg {
-          opacity: 0;
-        }
-
-        &:after {
-          opacity: 1;
-        }
-      }
-
-      &:after {
-        content: '';
-        font-size: 20px;
-        font-weight: 500;
-        letter-spacing: 2px;
-        position: absolute;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-      }
-
-      &:first-child {
-        &:after {
-          content: 'LINKEDIN';
-        }
-      }
+      text-align: center;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      font-size: 20px;
+      font-weight: 500;
     }
 
-    a.github {
+    &:first-child {
       &:after {
-        content: 'GITHUB';
-      }
-    }
+        content: 'HOME';
 
-    a.hashnode {
-      &:after {
-        content: 'HASHNODE';
-      }
-    }
-
-    a.twitter {
-      &:after {
-        content: 'TWITTER';
-      }
-    }
-
-    a.active {
-      svg {
-        color: #ffd700;
       }
     }
   }
-  @media screen and (max-width: 650px) {
-    .nav-bar {
-    display: none;
+
+  a.about-link {
+    &:after {
+      content: 'ABOUT';
     }
-   .nav-Icon {
+  }
+
+  a.contact-link {
+    &:after {
+      content: 'CONTACT';
+    }
+  }
+
+  a.portfolio-link {
+    &:after {
+      content: 'PORTFOLIO';
+    }
+  }
+
+  a.blog-link {
+    &:after {
+      content: 'BLOG';
+    }
+  }
+
+  a.active {
+    svg {
+      color: #603B61;
+    }
+  }
+}
+
+ul {
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 120px;
+  width: 100%;
+  display: block;
+  padding: 0;
+
+  a {
+    font-size: 22px;
+    color: #603B61;
+    display: block;
+    line-height: 51px;
+    height: 51px;
+    position: relative;
+    text-decoration: none;
+
+    i {
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover {
+      color: #AF6FAB;
+
+      svg {
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      content: '';
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+
+    &:first-child {
+      &:after {
+        content: 'LINKEDIN';
+      }
+    }
+  }
+
+  a.github {
+    &:after {
+      content: 'GITHUB';
+    }
+  }
+
+  a.hashnode {
+    &:after {
+      content: 'HASHNODE';
+    }
+  }
+
+  a.twitter {
+    &:after {
+      content: 'TWITTER';
+    }
+  }
+
+  a.active {
+    svg {
+      color: #ffd700;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-Icon {
     display: flex;
     justify-content: flex-end;
-    padding:0 10px;
+    padding: 0 10px;
     background: #BF94BC;
     height: auto;
+
     i {
       color: #603B61;
-      height:0;
+      height: 0;
       margin-right: 10px;
     }
-   
-   }
-   .dropdown-menu {
-    display: flex; 
+
+  }
+
+  .dropdown-menu {
+    display: flex;
     flex-direction: column;
     background: #BF94BC;
- margin: 0 150px ;
+    margin: 0 250px;
 
-  
+
     a {
-    
+
       font-size: 17px;
       font-weight: 200;
       color: #603B61;
       display: block;
-    
+
       height: 30px;
       position: relative;
       text-decoration: none;
 
-      i {
-        transition: all 0.3s ease-out;  
-     
-      }
+      p {
+        font-weight: 400;
+        margin-top: 0;
 
-      &:hover {
-        color: #AF6FAB;
+        &:hover {
+          color: #AF6FAB;
 
-        svg {
-          opacity: 0;
-        }
 
-        &:after {
-          opacity: 1;
-        }
-      }
-
-      &:after {
-        content: '';
-    
-        letter-spacing: 2px;
-        position: absolute;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        font-size: 20px;
-        font-weight: 500;
-      }
-
-      &:first-child {
-        &:after {
-          content: 'HOME';
-        
+          &:after {
+            opacity: 1;
+          }
         }
       }
     }
-
-    a.about-link {
-      &:after {
-        content: 'ABOUT';
-      }
-    }
-
-    a.contact-link {
-      &:after {
-        content: 'CONTACT';
-      }
-    }
-
-    a.portfolio-link {
-      &:after {
-        content: 'PORTFOLIO';
-      }
-    }
-
-    a.blog-link {
-      &:after {
-        content: 'BLOG';
-      }
-    }
-
     a.active {
-      svg {
+      p {
         color: #603B61;
       }
     }
   }
+}
+@media screen and (max-width: 440px) {
+ 
+
+
+  .dropdown-menu {
+   
+    margin: 0 150px;
+
+
+   
   }
+}

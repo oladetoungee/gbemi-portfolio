@@ -74,29 +74,29 @@ const About = () => {
     
         <div className="skill-container">
           <h2>CORE SKILLS</h2>
-          <div class="skills">
-            <div class="skill">
+          <div className="skills">
+            <div className="skill">
               <FontAwesomeIcon icon={faHtml5} ></FontAwesomeIcon>
               <span>HTML5</span>
             </div>
-            <div class="skill">
+            <div className="skill">
             <FontAwesomeIcon icon={faCss3} ></FontAwesomeIcon>
               <span>CSS3</span>
             </div>
-            <div class="skill">
+            <div className="skill">
            <FontAwesomeIcon icon={faJsSquare} ></FontAwesomeIcon>
               <span>Javascript</span>
             </div>
           
-            <div class="skill">
+            <div className="skill">
             <FontAwesomeIcon icon={faReact} ></FontAwesomeIcon>
               <span>ReactJS</span>
             </div>
-            <div class="skill">
+            <div className="skill">
             <FontAwesomeIcon icon={faVuejs} ></FontAwesomeIcon>
               <span>VueJS</span>
             </div>
-            <div class="skill">
+            <div className="skill">
             <FontAwesomeIcon icon={faGitAlt} ></FontAwesomeIcon>
               <span>Git</span>
             </div>
